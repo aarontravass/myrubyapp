@@ -61,3 +61,10 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "yard"
+gem "sorbet", group: :development
+gem "sorbet-runtime"
+
+gem "tapioca"
+gem "ruby_parser"

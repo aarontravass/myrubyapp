@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title><%= content_for(:title) || "Myapp" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -22,12 +23,14 @@
     <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-  </head>
+</head>
 
-  <body>
-  <%= render partial: "shared/navbar" %>
-  <div class="container">
-    <%= yield %>
+<body>
+    <%= render partial: "shared/navbar" %>
+    <div class="container">
+        <%= render partial: "shared/flash" %>
+        <%= yield %>
     </div>
-  </body>
+</body>
+
 </html>
