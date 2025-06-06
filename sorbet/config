@@ -1,4 +1,2 @@
 --dir
 .
---ignore=vendor
---ignore=node_modules

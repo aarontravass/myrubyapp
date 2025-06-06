@@ -13,3 +13,8 @@
     <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>
+
+<% if Current.user %>
+ Logged in as: <%= Current.user.email %>
+ <%= button_to "Logout", logout_path, method: :delete %>
+<%end%>
